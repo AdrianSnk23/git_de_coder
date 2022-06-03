@@ -1,0 +1,387 @@
+/*RESET CSS*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: lightgrey;
+}
+
+@font-face {
+    font-family: MsMadi;
+    src: url(MsMadi-Regular.ttf);
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(90deg, #51117f, #d31b9d);
+    position: fixed;
+}
+
+.background-main {
+    background-image: url(/imagenes/FondoGradient.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+}
+
+.background-main h1 {
+    font-family: MsMadi;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #51117f, #d31b9d);
+    height: 53px;
+}
+
+.redSocial {
+    width: 36px;
+    height: 36px;
+    padding: 0 20px 0 20px;
+}
+
+/* BARRA DE NAVEGACION */
+
+nav {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 95px;
+    height: 75px;
+    margin-left: 10px;
+}
+
+.bar-btn {
+    font-size: 25px;
+    color: #000;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.nav-menuHam {
+    position: fixed;
+    width: 50%;
+    height: 0vh;
+    top: 100px;
+    background: rgba(0, 0, 0, .85);
+    text-align: center;
+}
+
+.nav-menuHam li {
+    display: none;
+    line-height: 30px;
+    margin: 50px 0;
+    transition: all .7s;
+}
+
+.nav-menuHam li a {
+    color: lightgray;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.nav-menuHam li a.active, .nav-menuHam li a:hover {
+    color: #000;
+    transition: .5s;
+}
+
+#check {
+    display: none;
+}
+
+#check:checked ~ .nav-menuHam {
+    height: 100vh;
+}
+
+#check:checked ~ .nav-menuHam li {
+    display: block;
+}
+
+/* CUERPO DE PAGINA INDEX */
+
+.main {
+    
+    
+    background-image: url(https://s3.amazonaws.com/static.om.anigamy.net/static.selecciones.com.ar/App/Article/4370-560df2d4e6e55.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;    
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.main ul {
+    list-style: none;
+    padding: 60px;
+    width: 300px;
+    display: list-item;
+}
+
+.main span {
+    color: #d31b9d;
+}
+
+.main li {
+    padding: 15px 0;
+    color: #d31b9d;
+    list-style: disc;
+    text-align: center;
+    font-size: 22px;
+}
+
+.main h1 {
+    font-family: MsMadi;
+    margin-top: 50px;
+    padding-top: 80px;
+    font-size: 70px;
+    color: #51117f;
+}
+
+/* CUERPO DE SOBRE MI*/
+
+.background-main h2 {
+    padding:15px 0 15px 30px;
+    font-family: MsMadi;
+    font-size: 35px;
+}
+
+.sobreMi {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px 15px 30px;
+}
+
+.sobreMi p {
+    color: rgb(28, 2, 90);
+    font-weight: 600;
+}
+
+/* CUERPO DE SERVICIOS */
+
+.servicios {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px 15px 30px;
+}
+
+.servicios p {
+    color: rgb(28, 2, 90);
+    font-weight: 600;
+}
+
+/* CUERPO DE GALERIA */
+
+.fotosVideos h3 {
+    padding: 15px 0px 15px 30px;;
+    color: rgb(28, 2, 90);
+    font-weight: 800;
+}
+
+.gridFotos {
+    display: grid;
+    grid-template-columns: auto ;
+    grid-template-rows: auto auto auto auto auto auto;
+    padding: 5px;
+}
+
+.gridVideos {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    padding: 0 30px;
+    row-gap: 15px;
+}
+
+.scaleVid {
+    width: 380px;
+    height: 450px;
+}
+
+.borderImg {
+    border-radius: 10px;
+    box-shadow: 3px 3px rgba(0, 0, 0, .4);
+}
+
+/* CUERPO DE VISITA TAMBIÉN */
+
+.background-main a {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.visitaTb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px 15px 30px;
+}
+
+/* CUERPO DE CONTACTO */
+
+.contacto-bkg{
+    background-image: url("imagenes/FondoGradient.png");
+    padding: 35px 0 35px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+    width: 50%;
+    background-image: url("imagenes/background.jpg");
+    border-style: inset;
+    border-color: darkgray;
+}
+
+.boton-enviar{
+    display: flex;
+    justify-content: center;
+    margin: 5px 5px 5px 0;
+    width: 50%;
+    border-style: outset;
+    border-color: lightgray;
+    background-color: transparent;
+}
+
+/* MAIN GRID  */
+
+#grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+}
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 768px) {
+    .logo {
+        margin-left: 80px;
+    }
+    
+    nav {
+        height: 100px;
+    }
+
+    .bar-btn {
+        display: none;
+    }
+    
+    .nav-menuHam {
+        position: relative;
+        height: 100px;
+        width: 800px;
+        top: 0;
+        margin-right: 50px;
+        background: none;
+        transition: none;
+        text-align: right;
+        margin-right: 80px;
+    }
+
+    .nav-menuHam li {
+        display: inline-block;
+        line-height: 100px;
+        margin: 0 20px;
+        transition: none;
+    }
+
+    .nav-menuHam li a {
+        font-size: 16px;
+    }
+
+    .gridFotos {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        padding: 0 30px;
+    }
+
+    .gridVideos {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        padding: 0 30px;
+        row-gap: 15px;
+    }
+
+    .scaleVid {
+        width: 380px;
+        height: 450px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .logo {
+        margin-left: 80px;
+    }
+    
+    nav {
+        height: 100px;
+    }
+
+    .bar-btn {
+        display: none;
+    }
+    
+    .nav-menuHam {
+        position: relative;
+        height: 100px;
+        width: 800px;
+        top: 0;
+        margin-right: 50px;
+        background: none;
+        transition: none;
+        text-align: right;
+        margin-right: 80px;
+    }
+
+    .nav-menuHam li {
+        display: inline-block;
+        line-height: 100px;
+        margin: 0 20px;
+        transition: none;
+    }
+
+    .nav-menuHam li a {
+        font-size: 16px;
+    }
+
+    .gridFotos {
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+        padding: 0 30px;
+    }
+
+    .gridVideos {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto;
+        padding: 0 30px;
+        
+    }
+
+    .scaleVid {
+        width: 400px;
+        height: 300px;
+    }
+}
