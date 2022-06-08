@@ -14,8 +14,8 @@
     src: url(MsMadi-Regular.ttf);
 }
 
-header {
-    width: 100%;
+.header {
+    width: 100vw;
     height: 100px;
     display: flex;
     justify-content: space-around;
@@ -25,7 +25,7 @@ header {
 }
 
 .background-main {
-    background-image: url(imagenes/FondoGradient.png);
+    background-image: url(/imagenes/FondoGradient.png);
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 100px;
@@ -131,7 +131,7 @@ footer {
 /* BARRA DE NAVEGACION */
 
 nav {
-    height: 60px;
+    /* height: 60px; */
     width: 100%;
     display: flex;
     justify-content: center;
@@ -225,6 +225,7 @@ nav {
 
 .main h1 {
     font-family: MsMadi;
+    text-align: center;
     margin-top: 50px;
     padding-top: 80px;
     font-size: 70px;
@@ -273,9 +274,9 @@ nav {
 
 .gridFotos {
     display: grid;
-    grid-template-columns: auto ;
+    grid-template-columns: 100vh ;
     grid-template-rows: auto auto auto auto auto auto;
-    padding: 5px;
+    padding-left: 15px;
 }
 
 .gridVideos {
@@ -344,8 +345,25 @@ nav {
 
 #grid {
     display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    grid-template-rows: 100px 100vh 60px;
+    grid-template-columns: 100vw;
+}
+
+
+#grid header {
+    grid-area: header;
+}
+
+#grid main {
+    grid-area: main;
+}
+
+#grid footer {
+    grid-area: footer;
 }
 
 /* RESPONSIVE */
@@ -408,7 +426,7 @@ nav {
 
 @media screen and (min-width: 1200px) {
     .logo {
-        margin-left: 80px;
+        margin-left: 50px;
     }
     
     nav {
