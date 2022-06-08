@@ -25,7 +25,7 @@
 }
 
 .background-main {
-    background-image: url(/imagenes/FondoGradient.png);
+    background-image: url(imagenes/FondoGradient.png);
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 100px;
