@@ -226,8 +226,6 @@ nav {
 .main h1 {
     font-family: MsMadi;
     text-align: center;
-    margin-top: 50px;
-    padding-top: 80px;
     font-size: 70px;
     color: #51117f;
 }
@@ -460,7 +458,15 @@ nav {
         font-size: 16px;
     }
 
+    #grid{
+        grid-template-columns: 100vw;
+        grid-template-rows: 100px 77% 60px;
+    }
+    .background-main{
+        object-fit: contain;
+    }
     .gridFotos {
+        display: grid;
         grid-template-columns: auto auto auto;
         grid-template-rows: auto auto auto;
         padding: 0 30px;
