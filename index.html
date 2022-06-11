@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,9 +9,47 @@
     <link rel="shortcut icon" href="imagenes/LogoPS.png">
     <script src="https://kit.fontawesome.com/97a6f3f0fe.js" crossorigin="anonymous"></script>
     <title>Pet Sitters</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
-<body id="grid">
-    <header class="header">
+<!-- <body id="grid"> -->
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light gradienteNav fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img class="imgSize" src="imagenes/LogoPS.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav color">
+                        <!-- <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/sobremi.html"><h5>SOBRE MI</h5></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/servicios.html"><h5>SERVICIOS</h5></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/galeria.html"><h5>GALERIA</h5></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/visitatambien.html"><h5>VISITA TAMBIÉN</h5></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/contacto.html"><h5>CONTACTO</h5></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- <header class="header">
         <div>
             <img class="logo" src="imagenes/LogoPS.png" alt="Logo">
         </div>
@@ -27,17 +66,30 @@
                 <li><a href="pages/visitatambien.html">Visita También</a></li>
                 <li><a href="pages/contacto.html">Contacto</a></li>
             </ul>
-        </nav>
+        </nav> -->
     </header>
 
-    <main class="main">
-        <h1 class="animacionTitulo">Pet Sitters by Tathi</h1>
+    <!-- <main class="main"> -->
+    
+    <main>
+        <div class="card bg-light text-white">
+            <img src="imagenes/Img-index.jpg" class="card-img" alt="perros y gatos">
+            <div class="card-img-overlay">
+              <h1 class="card-title textColor h1Font">Pet Sitters By Tathi</h1>
+              <p class="card-text textColor">Cuidamos tus mascotas a domicilio</p>
+              <p class="card-text textColor">Paseos Recreativos</p>
+              <p class="card-text textColor">Atención Personalizada</p>
+            </div>
+          </div>
+        <!-- <h1 class="animacionTitulo">Pet Sitters by Tathi</h1>
         <ul>
             <li>CUIDAMOS TUS MASCOTAS A DOMICILIO</li>
             <li>PASEOS RECREATIVOS</li>
             <li>ATENCIÓN PERSONALIZADA</li>
-        </ul>
+        </ul> -->
     </main>
+
+
     <footer class="footer">
         <a href="https://www.facebook.com/Petsitters-RadaTilly-Cuidado-de-Mascotas-101546449218088/" target="_blank">
             <img class="redSocial animacionIconos" src="imagenes/icons8-facebook.svg" alt="icono facebook">
@@ -49,5 +101,9 @@
             <img class="redSocial animacionIconos3" src="imagenes/icons8-whatsapp.svg" alt="icono whatsapp">
         </a>
     </footer>
-    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+</body>
+
 </html>

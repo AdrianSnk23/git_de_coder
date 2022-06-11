@@ -14,6 +14,44 @@
     src: url(MsMadi-Regular.ttf);
 }
 
+/* Bootstrap */
+
+.imgSize {
+    height: 80px;
+}
+
+.gradienteNav {
+    background: linear-gradient(90deg, #51117f, #d31b9d);
+}
+
+.color a{
+    color: #adb5bd;
+}
+
+.textColor {
+    color: #d31b9d;
+    font-size: 22px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.h1Font {
+    font-family: MsMadi;
+    font-weight: 600;
+    font-size: 70px;
+    text-align: center;
+}
+
+body { padding-top: 70px; }
+
+
+
+
+
+/* CSS viejo*/
+
+
+
 .header {
     width: 100vw;
     height: 100px;
