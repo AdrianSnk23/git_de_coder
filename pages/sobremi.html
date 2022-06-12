@@ -3,40 +3,99 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" href="../imagenes/LogoPS.png">
-	<link rel="stylesheet" href="../style.css">
-	<script src="https://kit.fontawesome.com/97a6f3f0fe.js" crossorigin="anonymous"></script>
-	<title>Pet Sitters</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagenes/LogoPS.png">
+    <script src="https://kit.fontawesome.com/97a6f3f0fe.js" crossorigin="anonymous"></script>
+    <title>Pet Sitters</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 
-<body id="grid">
+<body>
 	<!-- logo + nav -->
-	<header	class="header">
-        <div>
-            <img class="logo" src="../imagenes/LogoPS.png" alt="Logo">
-        </div>
-        <nav>
-            <input type="checkbox" id="check">
-            <label for="check" class="bar-btn">
-                <i class="fa-solid fa-bars"></i>
-            </label>
-            <ul class="nav-menuHam">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="sobremi.html">Sobre Mi</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="galeria.html">Galeria</a></li>
-                <li><a href="visitatambien.html">Visita También</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+	<header>
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg gradiente fixed-top">
+                    <div class="container-fluid">
+                        <a class="navbar-brand h2Font" href="../index.html"><img class="imgSize" src="../imagenes/LogoPS.png" alt="logo">Pet Sitters by Tathi</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav color">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="sobremi.html">
+                                        <h5>SOBRE MI</h5>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="servicios.html">
+                                        <h5>SERVICIOS</h5>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="galeria.html">
+                                        <h5>GALERIA</h5>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="visitatambien.html">
+                                        <h5>VISITA TAMBIÉN</h5>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contacto.html">
+                                        <h5>CONTACTO</h5>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
     </header>
 
-	<main class="background-main">
-		<div>
-			<h1>Pet Sitters by Tathi</h1>
-		</div>
-		<div>
+	<main class="bkgGradient">
+		<!-- <div class="paddCaja">
+			<h1 class="text-center h1Font">Pet Sitters by Tathi</h1>
+		</div> -->
+        <div class="container-fluid paddCaja"> <!--d-flex justify-content-center-->
+        <div class="card text-bg-dark">
+            <div class="row g-0">
+              <div class="col-md-4 col-xl-4">
+                <img src="../imagenes/SobreMi.jpg" class="img-fluid rounded-start imgCard" alt="chica con perro">
+              </div>
+              <div class="col-md-8 col-xl-8">
+                <div class="card-body">
+                  <h2 class="card-title text-decoration-underline h1Font">Sobre Mi</h2>
+                  <p class="card-text colorTexto2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium impedit tenetur earum fugiat
+                    inventore corrupti cumque. Iste perferendis officiis eius blanditiis! Aut, tempora? Maxime eum dolores
+                    itaque velit nulla libero?
+                    Sint facilis nihil, dolores excepturi aliquid soluta nostrum illum ratione a et eius fuga voluptatem
+                    suscipit ipsa. Qui earum repudiandae modi ducimus, magni ad laboriosam, laudantium rerum corrupti
+                    voluptas inventore.
+                    Beatae eveniet harum suscipit cupiditate, aut, ducimus aliquam ipsa qui iusto maiores libero commodi
+                    quidem vel recusandae sunt error accusantium facilis in maxime impedit ratione quasi exercitationem?
+                    Modi, temporibus consectetur.
+                    Esse, perspiciatis odit excepturi consectetur, sequi ut doloribus deleniti quibusdam at sed autem,
+                    eligendi voluptatum dolore qui officia mollitia quis quam sint optio. Nemo molestiae quisquam corrupti,
+                    nisi culpa repellat.
+                    Minus, eligendi obcaecati odit eius nobis autem minima doloremque voluptatibus laborum quos alias
+                    impedit nihil. Deserunt ea ullam saepe aut nulla? Blanditiis adipisci iste est eos explicabo hic
+                    voluptatibus quas!</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+		<!-- <div>
 			<h2>Sobre mi</h2>
 		</div>
 		<div class="sobreMi">
@@ -59,23 +118,26 @@
 			</p>
 			<img src="https://media.gettyimages.com/photos/dog-a-companion-a-friend-picture-id1280196600?s=2048x2048"
 				alt="perrito" width="150" height="250">
-		</div>
+		</div> -->
 	</main>
 
 	<!-- espacio para el footer-->
 	
-	<footer class="footer-pages">
-		<a href="https://www.facebook.com/Petsitters-RadaTilly-Cuidado-de-Mascotas-101546449218088/"
-				target="_blank">
-				<img class="redSocial animacionIconos" src="../imagenes/icons8-facebook.svg" alt="logo facebook" />
-		</a>
-		<a href="https://www.instagram.com/petsitters_radatilly/" target="_blank">
-			<img class="redSocial animacionIconos2" src="../imagenes/icons8-instagram.svg" alt="logo instagram">
-		</a>
-		<a href="https://api.whatsapp.com/send?phone=542974059999" target="_blank">
-			<img class="redSocial animacionIconos3" src="../imagenes/icons8-whatsapp.svg" alt="logo whatsapp">
-		</a>
-	</footer>
+	<footer class="gradiente">
+        <div class="">
+            <div class="d-flex justify-content-center espaciado">
+                <a class="w-20" href="https://www.facebook.com/Petsitters-RadaTilly-Cuidado-de-Mascotas-101546449218088/"
+                    target="blank"><i class="fa-2x fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/petsitters_radatilly/" target="_blank" class="px-5"><i
+                        class="fa-2x fa-brands fa-instagram"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=542974059999" target="_blank"><i
+                        class="fa-2x fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
