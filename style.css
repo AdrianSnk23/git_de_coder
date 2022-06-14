@@ -15,6 +15,11 @@
     src: url(MsMadi-Regular.ttf);
 }
 
+body { 
+    padding-top: 70px;
+    /* height: 10vh; */
+}
+
 /* Bootstrap */
 
 .imgSize {
@@ -37,6 +42,10 @@
 
 .paddCaja {
     padding: 70px 0 15px 0;
+}
+
+.fixHeight {
+    height: 90vh;
 }
 
 .colorTexto {
@@ -69,9 +78,7 @@
     font-size: 3em;
 }
 
-body { 
-    padding-top: 70px;
-}
+
 
 .bkgGradient {
     background-image: url(imagenes/FondoGradient.png);
@@ -119,77 +126,32 @@ i {
     height: 315px;
 }
 
+
 /* CSS viejo*/
-
-
-
 
 
 /* CUERPO DE PAGINA INDEX */
 
-
-
 /* CUERPO DE SERVICIOS */
-
-.servicios {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 30px 15px 30px;
-}
-
-.servicios p {
-    color: rgb(28, 2, 90);
-    font-weight: 600;
-}
 
 /* CUERPO DE GALERIA */
 
-
-
 /* CUERPO DE VISITA TAMBIÉN */
-
-
 
 /* CUERPO DE CONTACTO */
 
-.contacto-bkg{
-    background-image: url("imagenes/FondoGradient.png");
-    padding: 35px 0 35px 0;
-    display: flex;
-    justify-content: center;
-}
-
-.form{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap-reverse;
-    width: 50%;
-    background-image: url("imagenes/background.jpg");
-    border-style: inset;
-    border-color: darkgray;
-}
-
-.boton-enviar{
-    display: flex;
-    justify-content: center;
-    margin: 5px 5px 5px 0;
-    width: 50%;
-    border-style: outset;
-    border-color: lightgray;
-    background-color: transparent;
-}
-
 /* MAIN GRID  */
-
-
 
 /* RESPONSIVE */
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
+   
+    .indexHeight {
+        height:85vh;
+    }
     .h1Font {
         font-weight: 600;
-        font-size: 3em;
+        font-size: 1.1em;
         text-align: center;
         padding-top: 0px;
     }
@@ -219,15 +181,17 @@ i {
         font-size: 10px;
         padding: 0;
     }
-
-    .imgMobile {
-        height: 50%;
-        width: 50%;
-    }
 }
 
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
+    body {
+        height: 100vh;
+    }
+    .indexHeight {
+        height:100vh;
+    }
+    
     .h1Font {
         font-weight: 600;
         font-size: 3em;
