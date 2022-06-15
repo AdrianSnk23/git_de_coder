@@ -7,7 +7,6 @@
     list-style: none;
     text-decoration: none;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    /* color: lightgrey; */
 }
 
 @font-face {
@@ -17,7 +16,7 @@
 
 body { 
     padding-top: 70px;
-    /* height: 10vh; */
+
 }
 
 /* Bootstrap */
@@ -38,6 +37,8 @@ body {
     border-radius:10px;
     box-shadow: 5px 8px 12px black;
     background-position: 50% 50%;
+    /* width: 90%;
+    height: 80%; */
 }
 
 .paddCaja {
@@ -45,7 +46,7 @@ body {
 }
 
 .fixHeight {
-    height: 90vh;
+    height: 75vh;
 }
 
 .colorTexto {
@@ -78,8 +79,6 @@ body {
     font-size: 3em;
 }
 
-
-
 .bkgGradient {
     background-image: url(imagenes/FondoGradient.png);
     background-repeat: no-repeat;
@@ -99,7 +98,7 @@ i {
     width: 100%;
 }
 
-.colorTexto2 {
+.texto2 {
     font-weight: 600;
     font-size: 19px;
     padding: 20px 0; 
@@ -126,28 +125,20 @@ i {
     height: 315px;
 }
 
+.center-footer {
+    text-align: end;
+}
 
-/* CSS viejo*/
 
-
-/* CUERPO DE PAGINA INDEX */
-
-/* CUERPO DE SERVICIOS */
-
-/* CUERPO DE GALERIA */
-
-/* CUERPO DE VISITA TAMBIÉN */
-
-/* CUERPO DE CONTACTO */
-
-/* MAIN GRID  */
 
 /* RESPONSIVE */
+
+
 
 @media (max-width: 767px) {
    
     .indexHeight {
-        height:85vh;
+        height:75vh;
     }
     .h1Font {
         font-weight: 600;
@@ -176,10 +167,13 @@ i {
         font-size: 10px;
         padding: 0;
     }
-    .colorTexto2 {
+    .texto2 {
         font-weight: 600;
         font-size: 10px;
         padding: 0;
+    }
+    .center-footer {
+        text-align:center;
     }
 }
 
@@ -212,68 +206,4 @@ i {
         font-weight: 600;
         font-size: 2em;
     }
-
-
-    /* .logo {
-        margin-left: 50px;
-    }
-    
-    nav {
-        height: 100px;
-    }
-
-    .bar-btn {
-        display: none;
-    }
-    
-    .nav-menuHam {
-        position: relative;
-        height: 100px;
-        width: 800px;
-        top: 0;
-        margin-right: 50px;
-        background: none;
-        transition: none;
-        text-align: right;
-        margin-right: 80px;
-    }
-
-    .nav-menuHam li {
-        display: inline-block;
-        line-height: 100px;
-        margin: 0 20px;
-        transition: none;
-    }
-
-    .nav-menuHam li a {
-        font-size: 16px;
-    }
-
-    #grid{
-        grid-template-columns: 100vw;
-        grid-template-rows: 100px 77% 60px;
-    }
-    .background-main{
-        object-fit: contain;
-    }
-    .gridFotos {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        grid-template-rows: auto auto auto;
-        padding: 0 30px;
-    }
-
-    .gridVideos {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        grid-template-rows: auto;
-        padding: 0 30px;
-        
-    }
-
-    .scaleVid {
-        width: 400px;
-        height: 300px;
-    } */
 }
-
