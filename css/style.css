@@ -1,213 +1,199 @@
 /*RESET CSS*/
-
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 @font-face {
-    font-family: MsMadi;
-    src: url(../MsMadi-Regular.ttf);
+  font-family: MsMadi;
+  src: url(../MsMadi-Regular.ttf);
 }
-
-body { 
-    padding-top: 70px;
-
+body {
+  padding-top: 70px;
 }
 
 /* Bootstrap */
-
 .imgSize {
-    height: 80px;
+  height: 80px;
 }
 
 .gradiente {
-    background: linear-gradient(90deg, #51117f, #d31b9d);
+  background: linear-gradient(90deg, #51117f, #d31b9d);
 }
 
 .color a {
-    color: #adb5bd;
+  color: #adb5bd;
 }
 
 .border {
-    border-radius:10px;
-    box-shadow: 5px 8px 12px black;
-    background-position: 50% 50%;
-    /* width: 90%;
-    height: 80%; */
+  border-radius: 10px;
+  box-shadow: 5px 8px 12px black;
+  background-position: 50% 50%;
 }
 
 .paddCaja {
-    padding: 70px 0 15px 0;
+  padding: 70px 0 15px 0;
 }
 
 .fixHeight {
-    height: 75vh;
+  height: 75vh;
 }
 
 .fixHeight-contacto {
-    height: 80vh;
+  height: 80vh;
 }
 
 .colorTexto {
-    color: blueviolet;
-    font-weight: 600;
-    font-size: 19px;
-    padding: 20px 0; 
+  color: blueviolet;
+  font-weight: 600;
+  font-size: 19px;
+  padding: 20px 0;
 }
 
 .h1Font {
-    font-family: MsMadi;
-    color: #ffc107;
-    font-weight: 600;
-    font-size: 4em;
-    text-align: center;
-    padding-top: 30px;
+  font-family: MsMadi;
+  color: #ffc107;
+  font-weight: 600;
+  font-size: 4em;
+  text-align: center;
+  padding-top: 30px;
 }
 
 .h2Font {
-    font-family: MsMadi;
-    color: #ffc107;
-    font-weight: 600;
-    font-size: 3em;
+  font-family: MsMadi;
+  color: #ffc107;
+  font-weight: 600;
+  font-size: 3em;
 }
 
 .h3Font {
-    font-family: MsMadi;
-    color: #ffc107;
-    font-weight: 600;
-    font-size: 3em;
+  font-family: MsMadi;
+  color: #ffc107;
+  font-weight: 600;
+  font-size: 3em;
 }
 
 .bkgGradient {
-    background-image: url(../imagenes/FondoGradient.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url(../imagenes/FondoGradient.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 i {
-    color: #ffc107;
+  color: #ffc107;
 }
 
 .nav-item a:hover {
-    color:#ffc107;
+  color: #ffc107;
 }
 
 .imgCard {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 .texto2 {
-    font-weight: 600;
-    font-size: 19px;
-    padding: 20px 0; 
-}
-
-.gridGaleria .col-xl-4{
-    padding: 20px;
-}
-
-.gridGaleria .col-md-6{
-    padding: 30px;
-}
-
-.gridGaleria img {
-    box-shadow:5px 8px 12px orange;
-}
-
-.gridGaleria img:hover {
-    transform: scale(1.2);
-}
-
-.gridGaleria iframe {
-    width: 100%;
-    height: 315px;
+  font-weight: 600;
+  font-size: 19px;
+  padding: 20px 0;
 }
 
 .center-footer {
-    text-align: end;
+  text-align: end;
 }
 
-
+.gridGaleria .col-xl-4 {
+  padding: 20px;
+}
+.gridGaleria .col-md-6 {
+  padding: 30px;
+}
+.gridGaleria img {
+  box-shadow: 5px 8px 12px #ffc107;
+}
+.gridGaleria img:hover {
+  transform: scale(1.2);
+}
+.gridGaleria iframe {
+  width: 100%;
+  height: 315px;
+}
 
 /* RESPONSIVE */
-
-
-
 @media (max-width: 767px) {
-   
-    .indexHeight {
-        height:75vh;
-    }
-    .h1Font {
-        font-weight: 600;
-        font-size: 1.1em;
-        text-align: center;
-        padding-top: 0px;
-    }
-    .h2Font {
-        font-family: MsMadi;
-        color: #ffc107;
-        font-weight: 600;
-        font-size: 1.1em;
-    }
+  .indexHeight {
+    height: 75vh;
+  }
 
-    .h3Font {
-        font-family: MsMadi;
-        color: #ffc107;
-        font-weight: 600;
-        font-size: 2em;
-    }
+  .h1Font {
+    font-weight: 600;
+    font-size: 1.1em;
+    text-align: center;
+    padding-top: 0px;
+  }
 
-    
-    .colorTexto {
-        color: blueviolet;
-        font-weight: 600;
-        font-size: 10px;
-        padding: 0;
-    }
-    .texto2 {
-        font-weight: 600;
-        font-size: 10px;
-        padding: 0;
-    }
-    .center-footer {
-        text-align:center;
-    }
+  .h2Font {
+    font-family: MsMadi;
+    color: #ffc107;
+    font-weight: 600;
+    font-size: 1.1em;
+  }
+
+  .h3Font {
+    font-family: MsMadi;
+    color: #ffc107;
+    font-weight: 600;
+    font-size: 2em;
+  }
+
+  .colorTexto {
+    color: blueviolet;
+    font-weight: 600;
+    font-size: 10px;
+    padding: 0;
+  }
+
+  .texto2 {
+    font-weight: 600;
+    font-size: 10px;
+    padding: 0;
+  }
+
+  .center-footer {
+    text-align: center;
+  }
 }
-
-
 @media screen and (min-width: 768px) and (max-width: 1200px) {
-    body {
-        height: 100vh;
-    }
-    .indexHeight {
-        height:100vh;
-    }
-    
-    .h1Font {
-        font-weight: 600;
-        font-size: 3em;
-        text-align: center;
-        padding-top: 0px;
-    }
+  body {
+    height: 100vh;
+  }
 
-    .h2Font {
-        font-family: MsMadi;
-        color: #ffc107;
-        font-weight: 600;
-        font-size: 1.5em;
-    }
+  .indexHeight {
+    height: 100vh;
+  }
 
-    .h3Font {
-        font-family: MsMadi;
-        color: #ffc107;
-        font-weight: 600;
-        font-size: 2em;
-    }
-}
+  .h1Font {
+    font-weight: 600;
+    font-size: 3em;
+    text-align: center;
+    padding-top: 0px;
+  }
+
+  .h2Font {
+    font-family: MsMadi;
+    color: #ffc107;
+    font-weight: 600;
+    font-size: 1.5em;
+  }
+
+  .h3Font {
+    font-family: MsMadi;
+    color: #ffc107;
+    font-weight: 600;
+    font-size: 2em;
+  }
+}/*# sourceMappingURL=style.css.map */

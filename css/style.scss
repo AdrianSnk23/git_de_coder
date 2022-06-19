@@ -1,0 +1,209 @@
+/*RESET CSS*/
+@import "colors";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@font-face {
+    font-family: MsMadi;
+    src: url(../MsMadi-Regular.ttf);
+}
+
+body { 
+    padding-top: 70px;
+
+}
+
+/* Bootstrap */
+
+.imgSize {
+    height: 80px;
+}
+
+.gradiente {
+    background: linear-gradient(90deg, $violetaDegrade, $rosaDegrade);
+}
+
+.color a {
+    color: #adb5bd;
+}
+
+.border {
+    border-radius:10px;
+    box-shadow: 5px 8px 12px black;
+    background-position: 50% 50%;
+}
+
+.paddCaja {
+    padding: 70px 0 15px 0;
+}
+
+.fixHeight {
+    height: 75vh;
+}
+
+.fixHeight-contacto {
+    height: 80vh;
+}
+
+.colorTexto {
+    color: blueviolet;
+    font-weight: 600;
+    font-size: 19px;
+    padding: 20px 0; 
+}
+
+.h1Font {
+    font-family: MsMadi;
+    color: $naranja;
+    font-weight: 600;
+    font-size: 4em;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.h2Font {
+    font-family: MsMadi;
+    color: $naranja;
+    font-weight: 600;
+    font-size: 3em;
+}
+
+.h3Font {
+    font-family: MsMadi;
+    color: $naranja;
+    font-weight: 600;
+    font-size: 3em;
+}
+
+.bkgGradient {
+    background-image: url(../imagenes/FondoGradient.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+i {
+    color: $naranja;
+}
+
+.nav-item a:hover {
+    color:$naranja;
+}
+
+.imgCard {
+    height: 100%;
+    width: 100%;
+}
+
+.texto2 {
+    font-weight: 600;
+    font-size: 19px;
+    padding: 20px 0; 
+}
+
+.center-footer {
+    text-align: end;
+}
+
+.gridGaleria {
+    .col-xl-4 {
+        padding: 20px;
+    }
+    .col-md-6 {
+        padding: 30px; 
+    }
+    img {
+        box-shadow:5px 8px 12px $naranja;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+    iframe {
+        width: 100%;
+        height: 315px;
+    }
+}
+
+
+/* RESPONSIVE */
+
+
+
+@media (max-width: 767px) {
+   
+    .indexHeight {
+        height:75vh;
+    }
+    .h1Font {
+        font-weight: 600;
+        font-size: 1.1em;
+        text-align: center;
+        padding-top: 0px;
+    }
+    .h2Font {
+        font-family: MsMadi;
+        color: $naranja;
+        font-weight: 600;
+        font-size: 1.1em;
+    }
+
+    .h3Font {
+        font-family: MsMadi;
+        color: $naranja;
+        font-weight: 600;
+        font-size: 2em;
+    }
+
+    
+    .colorTexto {
+        color: blueviolet;
+        font-weight: 600;
+        font-size: 10px;
+        padding: 0;
+    }
+    .texto2 {
+        font-weight: 600;
+        font-size: 10px;
+        padding: 0;
+    }
+    .center-footer {
+        text-align:center;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    body {
+        height: 100vh;
+    }
+    .indexHeight {
+        height:100vh;
+    }
+    
+    .h1Font {
+        font-weight: 600;
+        font-size: 3em;
+        text-align: center;
+        padding-top: 0px;
+    }
+
+    .h2Font {
+        font-family: MsMadi;
+        color: $naranja;
+        font-weight: 600;
+        font-size: 1.5em;
+    }
+
+    .h3Font {
+        font-family: MsMadi;
+        color: $naranja;
+        font-weight: 600;
+        font-size: 2em;
+    }
+}
