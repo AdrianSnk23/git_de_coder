@@ -11,7 +11,7 @@
 
 @font-face {
     font-family: MsMadi;
-    src: url(MsMadi-Regular.ttf);
+    src: url(../MsMadi-Regular.ttf);
 }
 
 body { 
@@ -84,7 +84,7 @@ body {
 }
 
 .bkgGradient {
-    background-image: url(imagenes/FondoGradient.png);
+    background-image: url(../imagenes/FondoGradient.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
