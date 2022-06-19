@@ -49,6 +49,10 @@ body {
     height: 75vh;
 }
 
+.fixHeight-contacto {
+    height: 80vh;
+}
+
 .colorTexto {
     color: blueviolet;
     font-weight: 600;
