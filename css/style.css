@@ -49,32 +49,28 @@ body {
 
 .colorTexto {
   color: blueviolet;
-  font-weight: 600;
   font-size: 19px;
+  font-weight: 600;
   padding: 20px 0;
 }
 
-.h1Font {
+.h1Font, .h3Font, .h2Font {
   font-family: MsMadi;
   color: #ffc107;
-  font-weight: 600;
   font-size: 4em;
+  font-weight: 600;
   text-align: center;
   padding-top: 30px;
 }
 
 .h2Font {
-  font-family: MsMadi;
-  color: #ffc107;
-  font-weight: 600;
   font-size: 3em;
+  padding-top: 0px;
 }
 
 .h3Font {
-  font-family: MsMadi;
-  color: #ffc107;
-  font-weight: 600;
-  font-size: 3em;
+  padding-top: 0px;
+  font-size: 2.5em;
 }
 
 .bkgGradient {
@@ -97,8 +93,8 @@ i {
 }
 
 .texto2 {
+  font-size: 20px;
   font-weight: 600;
-  font-size: 19px;
   padding: 20px 0;
 }
 
@@ -129,37 +125,33 @@ i {
     height: 75vh;
   }
 
-  .h1Font {
+  .h1Font, .h2Font, .h3Font {
+    font-size: 2em;
     font-weight: 600;
-    font-size: 3em;
     text-align: center;
     padding-top: 0px;
   }
 
   .h2Font {
-    font-family: MsMadi;
-    color: #ffc107;
-    font-weight: 600;
     font-size: 1.1em;
+    font-weight: 600;
   }
 
   .h3Font {
-    font-family: MsMadi;
-    color: #ffc107;
-    font-weight: 600;
     font-size: 2em;
+    font-weight: 600;
   }
 
   .colorTexto {
     color: blueviolet;
-    font-weight: 600;
     font-size: 10px;
+    font-weight: 600;
     padding: 0;
   }
 
   .texto2 {
+    font-size: 15px;
     font-weight: 600;
-    font-size: 10px;
     padding: 0;
   }
 
@@ -176,24 +168,20 @@ i {
     height: 100vh;
   }
 
-  .h1Font {
-    font-weight: 600;
+  .h1Font, .h2Font, .h3Font {
     font-size: 3em;
+    font-weight: 600;
     text-align: center;
     padding-top: 0px;
   }
 
   .h2Font {
-    font-family: MsMadi;
-    color: #ffc107;
-    font-weight: 600;
     font-size: 1.5em;
+    font-weight: 600;
   }
 
   .h3Font {
-    font-family: MsMadi;
-    color: #ffc107;
-    font-weight: 600;
     font-size: 2em;
+    font-weight: 600;
   }
 }/*# sourceMappingURL=style.css.map */

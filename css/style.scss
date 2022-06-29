@@ -1,6 +1,4 @@
 /*RESET CSS*/
-@import "colors";
-
 * {
     margin: 0px;
     padding: 0px;
@@ -8,6 +6,13 @@
     list-style: none;
     text-decoration: none;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+$colores:(naranja:#ffc107, violetaDegrade: #51117f, rosaDegrade: #d31b9d);
+
+@mixin tamanoLetra($font-size, $font-weight){
+    font-size: $font-size;
+    font-weight: $font-weight;
 }
 
 @font-face {
@@ -27,7 +32,7 @@ body {
 }
 
 .gradiente {
-    background: linear-gradient(90deg, $violetaDegrade, $rosaDegrade);
+    background: linear-gradient(90deg, map-get($colores, violetaDegrade), map-get($colores, rosaDegrade));
 }
 
 .color a {
@@ -54,32 +59,28 @@ body {
 
 .colorTexto {
     color: blueviolet;
-    font-weight: 600;
-    font-size: 19px;
+    @include tamanoLetra(19px, 600);
     padding: 20px 0; 
 }
 
 .h1Font {
     font-family: MsMadi;
-    color: $naranja;
-    font-weight: 600;
-    font-size: 4em;
+    color: map-get($colores, naranja);
+    @include tamanoLetra(4em, 600);
     text-align: center;
     padding-top: 30px;
 }
 
 .h2Font {
-    font-family: MsMadi;
-    color: $naranja;
-    font-weight: 600;
+    @extend .h1Font;
     font-size: 3em;
+    padding-top: 0px;
 }
 
 .h3Font {
-    font-family: MsMadi;
-    color: $naranja;
-    font-weight: 600;
-    font-size: 3em;
+    @extend .h1Font;
+    padding-top: 0px;
+    font-size: 2.5em;
 }
 
 .bkgGradient {
@@ -89,11 +90,11 @@ body {
 }
 
 i {
-    color: $naranja;
+    color: map-get($colores, naranja);
 }
 
 .nav-item a:hover {
-    color:$naranja;
+    color: map-get($colores, naranja);
 }
 
 .imgCard {
@@ -102,8 +103,7 @@ i {
 }
 
 .texto2 {
-    font-weight: 600;
-    font-size: 19px;
+    @include tamanoLetra(20px, 600);
     padding: 20px 0; 
 }
 
@@ -119,7 +119,7 @@ i {
         padding: 30px; 
     }
     img {
-        box-shadow:5px 8px 12px $naranja;
+        box-shadow:5px 8px 12px map-get($colores, naranja);
         &:hover {
             transform: scale(1.2);
         }
@@ -141,35 +141,26 @@ i {
         height:75vh;
     }
     .h1Font {
-        font-weight: 600;
-        font-size: 2em;
+        @include tamanoLetra(2em, 600);
         text-align: center;
         padding-top: 0px;
     }
     .h2Font {
-        font-family: MsMadi;
-        color: $naranja;
-        font-weight: 600;
-        font-size: 1.1em;
+        @include tamanoLetra(1.1em, 600);
     }
 
     .h3Font {
-        font-family: MsMadi;
-        color: $naranja;
-        font-weight: 600;
-        font-size: 2em;
+        @include tamanoLetra(2em, 600);
     }
 
     
     .colorTexto {
         color: blueviolet;
-        font-weight: 600;
-        font-size: 10px;
+        @include tamanoLetra(10px, 600);
         padding: 0;
     }
     .texto2 {
-        font-weight: 600;
-        font-size: 10px;
+        @include tamanoLetra(15px, 600);
         padding: 0;
     }
     .center-footer {
@@ -187,23 +178,16 @@ i {
     }
     
     .h1Font {
-        font-weight: 600;
-        font-size: 3em;
+        @include tamanoLetra(3em, 600);
         text-align: center;
         padding-top: 0px;
     }
 
     .h2Font {
-        font-family: MsMadi;
-        color: $naranja;
-        font-weight: 600;
-        font-size: 1.5em;
+        @include tamanoLetra(1.5em, 600);
     }
 
     .h3Font {
-        font-family: MsMadi;
-        color: $naranja;
-        font-weight: 600;
-        font-size: 2em;
+        @include tamanoLetra(2em, 600);
     }
 }

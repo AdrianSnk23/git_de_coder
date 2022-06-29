@@ -6,3 +6,11 @@
 	media query a utilizar el min para desktop 1200px
 
 	menu hamburguesa min 768px
+
+	CAMBIOS POR HACER
+
+	-ver el tema de map-get, extend y mixin para implementar en la pagina
+	 
+	-cambiar en las diferentes paginas el title agregando el de la subpagina o subtitulo
+
+	-ver el tema de las etiquetas meta description y keyword
