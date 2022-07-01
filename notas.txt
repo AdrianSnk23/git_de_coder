@@ -1,16 +1,8 @@
 
-	display: block /* se usa para mostrar contenido*/
-	
-	display: none /* se usa para ocultar contenido*/
-
-	media query a utilizar el min para desktop 1200px
-
-	menu hamburguesa min 768px
-
 	CAMBIOS POR HACER
 
-	-ver el tema de map-get, extend y mixin para implementar en la pagina
+	-ver el tema de map-get, extend y mixin para implementar en la pagina - LISTO
 	 
-	-cambiar en las diferentes paginas el title agregando el de la subpagina o subtitulo
+	-cambiar en las diferentes paginas el title agregando el de la subpagina o subtitulo - LISTO
 
-	-ver el tema de las etiquetas meta description y keyword
+	-ver el tema de las etiquetas meta description y keyword - LISTO
