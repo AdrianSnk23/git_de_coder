@@ -1,8 +1,0 @@
-
-	CAMBIOS POR HACER
-
-	-ver el tema de map-get, extend y mixin para implementar en la pagina - LISTO
-	 
-	-cambiar en las diferentes paginas el title agregando el de la subpagina o subtitulo - LISTO
-
-	-ver el tema de las etiquetas meta description y keyword - LISTO

@@ -54,6 +54,10 @@ body {
   padding: 20px 0;
 }
 
+.padTitle {
+  padding-bottom: 550px;
+}
+
 .h1Font, .h3Font, .h2Font {
   font-family: MsMadi;
   color: #ffc107;
@@ -61,16 +65,24 @@ body {
   font-weight: 600;
   text-align: center;
   padding-top: 30px;
+  text-shadow: 0 0 0.2em blueviolet, 0 0 0.2em blueviolet, 0 0 0.2em blueviolet;
 }
 
 .h2Font {
   font-size: 3em;
   padding-top: 0px;
+  text-shadow: 0 0 0.2em #d31b9d, 0 0 0.2em #d31b9d, 0 0 0.2em #d31b9d;
 }
 
 .h3Font {
   padding-top: 0px;
   font-size: 2.5em;
+  text-shadow: 0 0 0.2em #d31b9d, 0 0 0.2em #d31b9d, 0 0 0.2em #d31b9d;
+}
+
+.sombraTexto {
+  color: white;
+  text-shadow: 0 0 0.2em #d31b9d, 0 0 0.2em #d31b9d, 0 0 0.2em red;
 }
 
 .bkgGradient {
@@ -98,10 +110,6 @@ i {
   padding: 20px 0;
 }
 
-.center-footer {
-  text-align: end;
-}
-
 .gridGaleria .col-xl-4 {
   padding: 20px;
 }
@@ -119,6 +127,16 @@ i {
   height: 315px;
 }
 
+.imgWH {
+  width: 624px;
+  height: 468px;
+}
+
+.fotosClientes {
+  width: 300px;
+  height: 315px;
+}
+
 /* RESPONSIVE */
 @media (max-width: 767px) {
   .indexHeight {
@@ -126,20 +144,24 @@ i {
   }
 
   .h1Font, .h2Font, .h3Font {
-    font-size: 2em;
+    font-size: 2.5em;
     font-weight: 600;
     text-align: center;
     padding-top: 0px;
   }
 
   .h2Font {
-    font-size: 1.1em;
+    font-size: 2em;
     font-weight: 600;
   }
 
   .h3Font {
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 600;
+  }
+
+  .padTitle {
+    padding-bottom: 0px;
   }
 
   .colorTexto {
@@ -155,8 +177,13 @@ i {
     padding: 0;
   }
 
-  .center-footer {
-    text-align: center;
+  .imgWH-mobile {
+    width: 300px;
+    height: 300px;
+  }
+
+  .rowFix {
+    margin: 0;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
@@ -166,6 +193,10 @@ i {
 
   .indexHeight {
     height: 100vh;
+  }
+
+  .padTitle {
+    padding-bottom: 0px;
   }
 
   .h1Font, .h2Font, .h3Font {
