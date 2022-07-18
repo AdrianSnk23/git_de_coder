@@ -161,16 +161,16 @@ i {
         height:75vh;
     }
     .h1Font {
-        @include tamanoLetra(2.5em, 600);
+        @include tamanoLetra(1.8em, 600);
         text-align: center;
         padding-top: 0px;
     }
     .h2Font {
-        @include tamanoLetra(2em, 600);
+        @include tamanoLetra(1.5em, 500);
     }
 
     .h3Font {
-        @include tamanoLetra(1.5em, 600);
+        @include tamanoLetra(1.3em, 500);
     }
 
     .padTitle{

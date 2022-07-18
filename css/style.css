@@ -142,46 +142,38 @@ i {
   .indexHeight {
     height: 75vh;
   }
-
   .h1Font, .h2Font, .h3Font {
-    font-size: 2.5em;
+    font-size: 1.8em;
     font-weight: 600;
     text-align: center;
     padding-top: 0px;
   }
-
   .h2Font {
-    font-size: 2em;
-    font-weight: 600;
-  }
-
-  .h3Font {
     font-size: 1.5em;
-    font-weight: 600;
+    font-weight: 500;
   }
-
+  .h3Font {
+    font-size: 1.3em;
+    font-weight: 500;
+  }
   .padTitle {
     padding-bottom: 0px;
   }
-
   .colorTexto {
     color: blueviolet;
     font-size: 10px;
     font-weight: 600;
     padding: 0;
   }
-
   .texto2 {
     font-size: 15px;
     font-weight: 600;
     padding: 0;
   }
-
   .imgWH-mobile {
     width: 300px;
     height: 300px;
   }
-
   .rowFix {
     margin: 0;
   }
@@ -190,27 +182,22 @@ i {
   body {
     height: 100vh;
   }
-
   .indexHeight {
     height: 100vh;
   }
-
   .padTitle {
     padding-bottom: 0px;
   }
-
   .h1Font, .h2Font, .h3Font {
     font-size: 3em;
     font-weight: 600;
     text-align: center;
     padding-top: 0px;
   }
-
   .h2Font {
     font-size: 1.5em;
     font-weight: 600;
   }
-
   .h3Font {
     font-size: 2em;
     font-weight: 600;
