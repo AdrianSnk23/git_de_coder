@@ -60,7 +60,7 @@ function modificacionCliente() {
     let apellido = prompt("Ingrese el apellido del cliente: ");
     let diaDePaseo = prompt("Ingrese un dia hábil: ");
     let turnoDePaseo = parseInt(prompt("Ingrese un horario: \n 13 \n 14 \n 15 \n 16\n "));
-    let clienteModificado = new Clientes(nombre, apellido, nombreMascota, diaDePaseo, turnoDePaseo);
+    let clienteModificado = new Cliente(nombre, apellido, nombreMascota, diaDePaseo, turnoDePaseo);
     arrayClientes.splice(indice, 1, clienteModificado);
     console.log(arrayClientes);
     let chequeoDia = arrayDiasHabiles.includes(diaDePaseo)
