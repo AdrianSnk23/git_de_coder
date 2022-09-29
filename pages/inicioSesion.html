@@ -1,23 +1,16 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Niñera de mascotas con atención personalizada">
-    <meta name="keywords" content="niñera de mascotas, paseo de mascotas, perros, gatos, pet sitter, pet nanny, cuidado de mascotas, rada tilly, chubut, ">
-    <link rel="shortcut icon" href="../imagenes/LogoPS.png">
-    <script src="https://kit.fontawesome.com/97a6f3f0fe.js" crossorigin="anonymous"></script>
-    <title>Pet Sitters | Sobre Mi</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/style.css">
+    <title>Pet Sitters by Tathi | Inicio de Sesion</title>
 </head>
-
-<body>
-
-	<header>
+<body class="bkgGradient">
+    <header>
         <div class="container">
             <div class="row">
                 <nav class="navbar navbar-expand-lg gradiente fixed-top">
@@ -63,36 +56,58 @@
             </div>
     </header>
 
-	<main class="bkgGradient">
-		
-        <div class="container-fluid paddCaja">
-            <div class="card text-bg-dark">
-                <div class="row g-0">
-                        <div class="col-md-4 col-xl-4">
-                            <img src="../imagenes/SobreMi.jpg" class="img-fluid rounded-start imgCard" style="height: 70vh;" alt="chica con perro">
+    <main class="container d-flex justify-content-center my-5 py-5 bg-warning bg-gradient rounded-5">
+
+        <div class="card mb-3 bkgGradient rounded-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4 col-xl-6 d-none d-md-block">
+                <img src="https://placedog.net/250/580?id=6" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8 col-xl-6">
+                <div class="card-body">
+                  <h3 class="card-title text-center fw-bold h2Font">Bienvenido a Pet Sitters</h3>
+                  
+                    <!-- agrego el form con validate -->
+
+                    <form action="#" class="needs-validation" novalidate>
+                        <div class="mb-4">
+                            <label for="validationDefaultUsername" type="text" class="form-label" style="color:#ffc107; text-shadow: 0 0 0.2em black, 0 0 0.2em white, 0 0 0.2em black;">Nombre de usuario</label>
+                            <input type="email" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
                         </div>
-                    <div class="col-md-8 col-xl-8 d-flex align-items-center">
-                        <div class="card-body">
-                            <h2 class="card-title text-decoration-underline h1Font">
-                                Sobre Mi
-                            </h2>
-                            <p class="card-text texto2">
-                                Mi nombre es Tania (Tathi). Toda mi vida fui amante de los animales. Si por mi fuera tendría la casa llena 🐹🐶🐱🐷🐮🐰🐭.
-                                Cuando llegue a Rada Tilly, me hice amigos y alla por 2016 por cuestiones de la vida uno de ellos tuvieron que viajar de urgencia y me dejaron lo mas valioso que tenían y tienen: a sus mascotas (NASHA y PACO). Y así es como nacía de a poquito este emprendimiento que hago con mucho cuidado, amor y dedicación!
-                                Cuando se calmaron un poco las aguas en pandemia decidí abrir este sitio y abrirme al cuidado de mascotas para el publico en general y ya no solo a mis amigos. FUE y ES una de las mejores decisiones que tomé! Decidí dejar los miedos de lado, animarme, dedicarme y dedicarles mi amor y atención a ellos que me dan todo cuando me ven mientras sus dueños me los dejan al cuidado. GRACIAS a todos, a las nuevas familias 🐶🐱que se suman y a los que ya son parte de esta comunidad! GRACIAS GRACIAS GRACIAS por confiar en MI!
-                            </p>
+                        <div class="mb-1">
+                            <label type="password" class="form-label" style="color:#ffc107; text-shadow: 0 0 0.2em black, 0 0 0.2em white, 0 0 0.2em black;">Contraseña</label>
+                            <input type="password" class="form-control" name="password">
                         </div>
-                    </div>
+                        <div class="mb-4">
+                            <input type="checkbox" name="connected" class="form-check-input" id="">
+                            <label for="connected" class="form-check-label" style="color:#ffc107; text-shadow: 0 0 0.2em black, 0 0 0.2em white, 0 0 0.2em black;">Siempre conectado</label>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary"><a class="text-decoration-none text-light" href="turnos.html">Iniciar Sesión</a></button>
+                        </div>
+                        <div class="my-3">
+                            <div style="color:#ffc107; text-shadow: 0 0 0.2em black, 0 0 0.2em white, 0 0 0.2em black;">No tienes cuenta? <a href="#" class="text-light">Registrate</a></div>
+                            <div><a href="#" class="text-light">Olvidaste tu contraseña?</a></div>
+                        </div>
+
+
+                    </form>
+
+
+
+
+
+
                 </div>
+              </div>
             </div>
-        </div>
-		
-	</main>
-	
+          </div>
+
+    </main>
+    
     <footer class="text-center text-white gradiente" style="background-color: #f1f1f1;">
 
         <div class="container pt-0"> 
-
             <section class="mb-0">
                 <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.facebook.com/Petsitters-RadaTilly-Cuidado-de-Mascotas-101546449218088/" role="button" data-mdb-ripple-color="dark" target="_blank">
                     <i class="fab fa-2x fa-facebook-f"></i>
@@ -104,11 +119,9 @@
                     <i class="fab fa-2x fa-whatsapp"></i>
                 </a>
           </section>
-
         </div>
-
-        <div class="text-dark p-1 d-flex justify-content-center align-items-baseline" style="background-color: rgba(0, 0, 0, 0.2);">
-            <p style="color:white; text-shadow: 0 0 0.2em black, 0 0 0.2em white, 0 0 0.2em black;">© 2022 Copyright:Adrian Rodriguez</p>
+        <div class="text-dark p-1 d-flex justify-content-center align-items-baseline sombraTexto-Footer" style="background-color: rgba(0, 0, 0, 0.2);">
+                <p style="color:white; text-shadow: 0 0 0.2em black, 0 0 0.2em white, 0 0 0.2em black;">© 2022 Copyright:Adrian Rodriguez</p>
                 <a class="btn btn-link btn-floating btn-lg text-dark m-0 p-1" href="https://github.com/AdrianSnk23" role="button" data-mdb-ripple-color="dark" target="_blank">
                     <i class="fab fa-github"></i>
                 </a>
@@ -118,9 +131,8 @@
         </div>
 
       </footer>
-
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="inicioSesion.js"></script>
 </body>
-
 </html>

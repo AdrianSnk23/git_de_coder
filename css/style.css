@@ -36,7 +36,7 @@ body {
 }
 
 .paddCaja {
-  padding: 70px 0 15px 0;
+  padding: 30px 0 15px 0;
 }
 
 .fixHeight {
@@ -182,9 +182,9 @@ i {
   body {
     height: 100vh;
   }
-  .indexHeight {
+  /* .indexHeight {
     height: 100vh;
-  }
+  } */
   .padTitle {
     padding-bottom: 0px;
   }
@@ -204,4 +204,10 @@ i {
   }
 }/*# sourceMappingURL=style.css.map */
 
-/* Creo una pagina html que se llame calendario*/
+
+/* Clase para formulario de reserva de turnos. */
+
+.invisible { 
+  display: none;
+
+}

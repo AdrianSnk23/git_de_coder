@@ -54,7 +54,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link fs-5" href="calendario.html">
+                                    <a class="nav-link fs-5" href="turnos.html">
                                     TURNO ONLINE
                                     </a>
                                 </li>
@@ -65,55 +65,90 @@
             </div>
     </header>
 
-    <main class="d-flex flex-column align-items-center p-3 bkgGradient">
-        <form class="m-2" id="paseoRecreativo">
-            <p class="fs-2 mt-3 text-warning">Paseos Recreativos</p><br>
-            <fieldset class="d-flex flex-column">
-                <div class="input-group mb-3">
-                    <span class="input-group-text">👤</span>
-                    <div class="form-floating">
-                      <input type="text" class="form-control" id="nombreCliente" placeholder="Username">
-                      <label for="nombreCliente">Nombre del Cliente</label>
-                    </div>
-                  </div>
-                  <div class="input-group mb-3">
-                    <span class="input-group-text">👤</span>
-                    <div class="form-floating">
-                      <input type="text" class="form-control" id="apellidoCliente" placeholder="Username">
-                      <label for="apellidoCliente">Apellido del Cliente</label>
-                    </div>
-                  </div>
-                  <div class="input-group mb-3">
-                    <span class="input-group-text">🐶</span>
-                    <div class="form-floating">
-                      <input type="text" class="form-control" id="nombreMascota" placeholder="Username">
-                      <label for="nombreMascota">Nombre de Mascota</label>
-                    </div>
-                  </div> 
-    
-                <select class="form-select form-select-lg" aria-label="Default select example" id="diaDePaseo">
-                    <option selected>Selecciona un dia hábil</option>
-                    <option value="Lunes">Lunes</option>
-                    <option value="Martes">Martes</option>
-                    <option value="Miercoles">Miercoles</option>
-                    <option value="Jueves">Jueves</option>
-                    <option value="Viernes">Viernes</option>
-                </select><br>
-                <select class="form-select form-select-lg" aria-label="Default select example" id="turnoDePaseo">
-                    <option selected>Selecciona un turno</option>
-                    <option value="13">13hs</option>
-                    <option value="14">14hs</option>
-                    <option value="15">15hs</option>
-                    <option value="16">16hs</option>
-                </select>
-                <br>
-                <button type="submit" class="btn btn-success">Confirmar Turno</button>
-            </fieldset>
-        </form>
-    
-        <div id="contenedor" class="d-flex justify-content-center"></div>
+    <main class="d-flex flex-column justify-content-center align-items-center p-3 pt-5 bkgGradient">
 
+        <div class="d-flex flex-row">
+            <div class="card m-2 text-center bg-secondary bg-gradient" style="width: 30rem;">
+                <img src="https://static3.mujerhoy.com/www/multimedia/201711/29/media/cortadas/perro-chica-kLjC-U50201189531FCC-624x468@MujerHoy.jpg" class="card-img-top" alt="..." style="width: 30rem; height: 400px">
+                <div class="card-body d-flex flex-column">
+                <h5 class="card-title h3Font">Paseos Recreativos</h5>
+                <!-- <p class="card-text"></p> -->
+                <button type="submit" class="btn btn-warning" id="btnPaseos">Haz tu reserva</button><br>
+                <button class="btn btn-warning" id="btnReserva">Ver Reserva</button>
+                </div>
+            </div>
+            <div class="card m-2 text-center bg-secondary bg-gradient" style="width: 30rem;">
+                <img src="https://t1.ea.ltmcdn.com/es/posts/8/7/8/como_dejar_a_un_perro_solo_en_casa_20878_orig.jpg" class="card-img-top" alt="..." style="width: 30rem; height: 400px">
+                <div class="card-body">
+                <h5 class="card-title h2Font">Niñera de Mascotas</h5>
+                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                <button href="#" class="btn btn-warning" >Proximamente</button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="contenedorFormulario" class="invisible">
+            <form class="m-2 needs-validation" id="paseoRecreativo" novalidate>
+                <p class="fs-2 mt-3 h3Font">Paseos Recreativos</p><br>
+                <fieldset class="d-flex flex-column">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">👤</span>
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="nombreCliente" placeholder="Username" required>
+                        <label for="nombreCliente">Nombre del Cliente</label>
+                        <div class="valid-feedback" >Excelente</div>
+                        <div class="invalid-feedback text-warning">Completa este campo</div>
+                        </div>
+                    </div>
+                    <div   class="input-group mb-3">
+                        <span class="input-group-text">👤</span>
+                        <div class="form-floating">
+                        <input type="text" class="form-control" id="apellidoCliente" placeholder="Username" required>
+                        <label for="apellidoCliente">Apellido del Cliente</label>
+                        <div class="valid-feedback" >Excelente</div>
+                        <div class="invalid-feedback text-warning">Completa este campo</div>
+                        </div>
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">🐶</span>
+                        <div class="form-floating">
+                        <input type="text" class="form-control" id="nombreMascota" placeholder="Username" required>
+                        <label for="nombreMascota">Nombre de Mascota</label>
+                        <div class="valid-feedback" >Excelente</div>
+                        <div class="invalid-feedback text-warning">Completa este campo</div>
+                        </div>
+                    </div> 
+            
+                    <select class="form-select form-select-lg" aria-label="Default select example" id="diaDePaseo">
+                        <option selected disabled value="">Selecciona un dia hábil</option>
+                        <option value="Lunes">Lunes</option>
+                        <option value="Martes">Martes</option>
+                        <option value="Miercoles">Miercoles</option>
+                        <option value="Jueves">Jueves</option>
+                        <option value="Viernes">Viernes</option>
+                    </select>
+                    <br>
+                    <select class="form-select form-select-lg" aria-label="Default select example" id="turnoDePaseo">
+                        <option selected disabled value="">Selecciona un horario</option>
+                        <option value="13">13hs</option>
+                        <option value="14">14hs</option>
+                        <option value="15">15hs</option>
+                        <option value="16">16hs</option>
+                    </select>
+                    <br>
+                    <button type="submit" class="btn btn-success">Confirmar Turno</button>
+                </fieldset>
+            </form>
+            
+            <div id="contenedor" class="d-flex justify-content-center"></div>
+            </div>
+        </div>
     </main>
+    
+    <div id="paseos" class=""></div>
+    <div id="contenedorReserva"></div>
+    <div id="verReserva" class="d-flex flex-column align-items-center bkgGradient"></div>
+    
 
     <footer class="text-center text-white gradiente" style="background-color: #f1f1f1;">
 
