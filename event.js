@@ -16,9 +16,6 @@ if(localStorage.getItem("reservas")){
     arrayClientes = [...reserva]
  }
 
-
-
-
 /*****************************/
 
 
