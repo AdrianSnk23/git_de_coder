@@ -89,7 +89,7 @@ const validarFormulario = () => {
 const btnReserva = document.getElementById("btnReserva");
 const contenedorReserva = document.getElementById("contenedorReserva")
 const verReserva = document.getElementById("verReserva")
-const listadoClientes = "/json/clientes.json"
+const listadoClientes = "../json/clientes.json"
 
 btnReserva.addEventListener("click", () => {
   document.getElementById("contenedorFormulario").classList.add("invisible") //toggle("invisible")
@@ -132,22 +132,3 @@ btnReserva.addEventListener("click", () => {
     console.log(usuarios);
     
   })})
-
-
-  
-  
-  // contenedorReserva.innerHTML = "";
-  // arrayClientes.forEach (cliente => {
-  //   const {nombre, apellido, nombreMascota, diaDePaseo, turnoDePaseo} = cliente;
-  //   console.log(arrayClientes) // usar un contenedor padre y a ese contenedor sobrescribir
-  //   verReserva.innerHTML =`
-  //                    <h1 class="text-center mt-3 text-warning">Su turno es</h1>
-  //                    <div class="card w-75 text-center m-1 text-bg-success" style="width: 18rem;">
-  //                      <div class="card-body">
-  //                        <h5 class="card-title">Cliente: ${nombre} ${apellido}</h5>
-  //                        <h6 class="card-subtitle mb-2">Nombre de Mascota: ${nombreMascota}</h6>
-  //                        <p class="card-text">El dia de paseo es el ${diaDePaseo} ${turnoDePaseo} hs</p>
-  //                      </div>
-  //                    </div>
-  //                    `
-  //
