@@ -89,21 +89,65 @@ const validarFormulario = () => {
 const btnReserva = document.getElementById("btnReserva");
 const contenedorReserva = document.getElementById("contenedorReserva")
 const verReserva = document.getElementById("verReserva")
+const listadoClientes = "/json/clientes.json"
 
 btnReserva.addEventListener("click", () => {
+  document.getElementById("contenedorFormulario").classList.add("invisible") //toggle("invisible")
+  Swal.fire({
+    title:"Ingresa el nombre de tu mascota:",
+    input: "text",
+    inputLabel: "nombre mascota",
+    confirmButtonText: "Listo"
+  }).then((result) =>{
+    let usuarios = arrayClientes;
+    let mascota;
+    console.log(result)
+    if (result.isConfirmed) {
+      fetch(listadoClientes)
+      .then(datos => {
+        datos.json().then(datosJson => {
+          console.log(datosJson)
+          usuarios = [...arrayClientes, ...datosJson];
+          mascota = usuarios.find(reserva => {
+            return reserva.nombreMascota === result.value
+          })
+          console.log(mascota)
+          if(mascota){
+            contenedorReserva.innerHTML =`<h1 class="text-center mt-3 text-warning">Su turno es</h1>
+                                <div class="card w-75 text-center m-1 text-bg-success" style="width: 18rem;">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Cliente: ${mascota.nombre} ${mascota.apellido}</h5>
+                                    <h6 class="card-subtitle mb-2">Nombre de Mascota: ${mascota.nombreMascota}</h6>
+                                    <p class="card-text">El dia de paseo es el ${mascota.diaDePaseo} ${mascota.turnoDePaseo} hs</p>
+                                  </div>
+                                </div>`
+
+          } else {
+            contenedorReserva.innerHTML = "<p>no existe la reserva</p>"
+          }
+          
+        })
+      })
+    }
+    console.log(usuarios);
+    
+  })})
+
+
+  
+  
   // contenedorReserva.innerHTML = "";
-  arrayClientes.forEach (cliente => {
-    const {nombre, apellido, nombreMascota, diaDePaseo, turnoDePaseo} = cliente;
-    console.log(arrayClientes) // usar un contenedor padre y a ese contenedor sobrescribir
-    verReserva.innerHTML =`
-                     <h1 class="text-center mt-3 text-warning">Su turno es</h1>
-                     <div class="card w-75 text-center m-1 text-bg-success" style="width: 18rem;">
-                       <div class="card-body">
-                         <h5 class="card-title">Cliente: ${nombre} ${apellido}</h5>
-                         <h6 class="card-subtitle mb-2">Nombre de Mascota: ${nombreMascota}</h6>
-                         <p class="card-text">El dia de paseo es el ${diaDePaseo} ${turnoDePaseo} hs</p>
-                       </div>
-                     </div>
-                     `
-  })
-})
+  // arrayClientes.forEach (cliente => {
+  //   const {nombre, apellido, nombreMascota, diaDePaseo, turnoDePaseo} = cliente;
+  //   console.log(arrayClientes) // usar un contenedor padre y a ese contenedor sobrescribir
+  //   verReserva.innerHTML =`
+  //                    <h1 class="text-center mt-3 text-warning">Su turno es</h1>
+  //                    <div class="card w-75 text-center m-1 text-bg-success" style="width: 18rem;">
+  //                      <div class="card-body">
+  //                        <h5 class="card-title">Cliente: ${nombre} ${apellido}</h5>
+  //                        <h6 class="card-subtitle mb-2">Nombre de Mascota: ${nombreMascota}</h6>
+  //                        <p class="card-text">El dia de paseo es el ${diaDePaseo} ${turnoDePaseo} hs</p>
+  //                      </div>
+  //                    </div>
+  //                    `
+  //

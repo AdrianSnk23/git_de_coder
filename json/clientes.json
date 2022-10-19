@@ -1,0 +1,7 @@
+[
+    {"nombre": "Daniel", "apellido": "Herrera", "nombreMascota": "Firulais", "diaDePaseo": "lunes", "turnoDePaseo": "16"},
+    {"nombre": "Victoria", "apellido": "Lopez", "nombreMascota": "Luna", "diaDePaseo": "martes", "turnoDePaseo": "13"},
+    {"nombre": "Juana", "apellido": "Alvarado", "nombreMascota": "Negrita", "diaDePaseo": "martes", "turnoDePaseo": "15"},
+    {"nombre": "Rodrigo", "apellido": "Hueicha", "nombreMascota": "Rocko", "diaDePaseo": "Viernes", "turnoDePaseo": "14"},
+    {"nombre": "Christian", "apellido": "Dubois", "nombreMascota": "Gonzalo", "diaDePaseo": "jueves", "turnoDePaseo": "16"}
+]
