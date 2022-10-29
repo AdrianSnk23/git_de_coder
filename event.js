@@ -123,7 +123,7 @@ btnReserva.addEventListener("click", () => {
                                 </div>`
 
           } else {
-            contenedorReserva.innerHTML = '<h2 class="text-center mt-3 text-bg-danger">No tiene reserva hecha. Por favor realice su reserva.</h2>'
+            contenedorReserva.innerHTML = '<h2 class="text-center mt-3 text-warning bkgGradient">No tiene reserva hecha. Por favor realice su reserva.</h2>'
           }
           
         })
